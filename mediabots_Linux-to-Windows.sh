@@ -187,7 +187,7 @@ else
 	fi
 fi # 2nd if closed
 else # 1st if else
-if [ $availableRAM -ge 4650 ] ; then
+if [ $availableRAM -ge 500 ] ; then
 	read -r -p "Do you want to completely delete your current Linux O.S.? (yes/no) : " deleteLinux
 	deleteLinux=$(echo "$deleteLinux" | head -c 1)
 	if [ ! -z $deleteLinux ] && [ $deleteLinux = 'Y' -o $deleteLinux = 'y' ] ; then
